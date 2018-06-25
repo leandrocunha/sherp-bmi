@@ -1,0 +1,117 @@
+//== Colors
+$blue: #11A8A8 !default;
+$gray: #F2F3F3 !default;
+$green: #78A50E !default;
+$main-gray: #3E3934 !default;
+$red: #ED1C24 !default;
+$yellow: #FDB913 !default;
+$white: #ffffff;
+$primary: $blue !default;
+
+$body-bg: $primary !important;
+$body-color: $white !important;
+$font-family-base:'Raleway', sans-serif;
+
+.navbar {
+    background: linear-gradient(#000, transparent);
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 5rem;
+}
+
+.navbar-brand {
+    background-image: url('./../images/logo_sherpa.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 2.8rem;
+    text-indent: -5000rem;
+    width: 10rem;
+}
+
+.card {
+    color: $main-gray;
+    margin-bottom: 1.5rem;
+
+    .card-body {
+        .card-title {
+            margin: 0 0 1rem 0;
+            text-align: center;
+        }
+
+        .form-control {
+            margin: 0 auto;
+            max-width: 30%;
+        }
+    }
+}
+
+.btn {
+    &.btn-calculate {
+        background-color: $white;
+        border-radius: 2.5rem;
+        color: $primary;
+        display: block !important;
+        font-size: 1.5rem;
+        font-weight: 700 !important;
+        margin: 0 auto 3rem auto;
+        padding: 1rem 5rem;
+    }
+}
+
+.btn-wrapper {
+    text-align: center;
+
+    .btn {
+        text-transform: uppercase;
+    }
+}
+
+.range {
+    padding: 2rem;
+
+    .col {
+        align-items: center;
+        color: $white;
+        display: flex;
+        font-weight: 700;
+        justify-content: center;
+        padding: 1rem;
+
+        &:first-of-type {
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+        }
+
+        &:last-of-type {
+            border-top-right-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+        }
+
+        &.range-underweight,
+        &.range-obese {
+            background-color: $red;
+        }
+
+        &.range-normal {
+            background-color: $green;
+        }
+
+        &.range-overweight {
+            background-color: $yellow;
+        }
+    }
+}
+
+header {
+    h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    margin-bottom: 2rem;
+}
+footer {
+    color: $white;
+    margin: 3rem 0;
+    text-align: center;
+}
